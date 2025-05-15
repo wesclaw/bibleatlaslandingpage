@@ -53,3 +53,15 @@ p{
   max-width: 400px;
   height: auto;
 }
+
+.sectionImage{
+  width: 300px;
+}
+
+section div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
