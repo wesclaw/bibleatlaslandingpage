@@ -16,10 +16,9 @@ body{
   height: 100vh;
   justify-content: center;
   align-items: center;
-  /* flex-direction: column; */
 }
 
-.container div{
+.divInContainer{
   display: flex;
   flex-direction: column;
   gap: 7px;
@@ -64,4 +63,120 @@ section div{
   align-items: center;
 }
 
+.startBtn{
+  background-color: rgb(14, 165, 233);
+  padding: 12px 24px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(14, 165, 233, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+  margin-bottom: 20px;
+}
 
+.startBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(14, 165, 233, 0.6);
+}
+
+.startBtn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(14, 165, 233, 0.3);
+}
+
+div a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section div{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.app-review {
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.stars {
+  display: inline-flex;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.app-quote {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #555;
+  margin: 0;
+}
+
+
+
+/* */
+
+.features-section {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .features-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+    color: #1e293b; /* Dark blue-gray for contrast */
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .feature-item {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-left: 5px solid #0ea5e9;
+    padding: 1.2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: #1f2937; /* Dark slate text */
+    transition: transform 0.2s ease;
+  }
+
+  .feature-item:hover {
+    transform: scale(1.02);
+  }
+
+  .feature-item strong {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+    color: #0f172a; /* Near-black heading */
+  }
+
+  @media (max-width: 768px) {
+    .features-grid {
+      grid-template-columns: 1fr;
+    }
+  }
